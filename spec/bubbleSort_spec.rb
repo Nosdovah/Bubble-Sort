@@ -43,4 +43,11 @@ RSpec.describe 'Bubble sort exercise' do
             expect(bubblesort(array)).to eql([1,2,3,4,5,6])
         end
     end
+
+    describe 'as the Odin Project ask' do
+        it 'sort the odin project example array' do
+            array = [4,3,78,2,0,2]
+            expect(bubblesort(array)).to eql([0,2,2,3,4,78])
+        end
+    end
 end
